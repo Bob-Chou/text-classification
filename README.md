@@ -1,4 +1,6 @@
 # Chinese Text Binary Classification (News)
+## Introduction
+This project targets to build several models for **CHINESE** text classification task. MLP, Naive Bayes, CNN models are implemented and evaluated by ROC curve.
 ## Setup
 Extract features from raw data.
 ### Word-wise
@@ -93,3 +95,7 @@ ROC and AUC evaluation of a model.
 ```bash
 python3 evaluation/roc.py --input datasets/test --prediction prediction/char_cnn_pred.txt,prediction/mlp_word2vec_pred.txt,prediction/mlp_tf_idf_pred.txt,prediction/naive_bayes_pred.txt --name Char\ CNN,MLP-Word2Vec,MLP-TF-IDF,Naive\ Bayes
 ```
+<img src="https://github.com/Bob-Chou/text-classification/blob/master/evaluation/evaluation.png" width = "500" align=center />
+
+## Acknowledgement
+This project serves as the submission of SJTU EE448 assignment.
